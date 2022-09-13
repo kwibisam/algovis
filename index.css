@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: #4d5061;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+select, button {
+  font-size: 1rem;
+  padding: .5em 3em 1em 1.5em;
+  margin-right: 0.5rem;
+  background-color: #fff;
+  border: none;
+}
+
+.gridTable {
+  background-color: #c6bdbd;
+  width: 80%;
+  height: 70vh;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid #8fb8b9;
+}
+
+.start {
+  background-color: #dc9510;
+  background-size: cover;
+}
+
+.finish {
+  background-color: blue;
+  background-size: cover;
+}
+.onDrag {
+  background-color: lightgrey;
+}
+
+.visited {
+  background-color: #add8e6;
+  animation-name: visited;
+  animation-duration: 2s;
+  border: 1px solid #c0c0c0;
+}
+
+.onPath {
+  background-color: rgb(0, 251, 0);
+  animation-name: path;
+  animation-duration: 1s;
+}
+
+.wall {
+  background-color: #283747;
+  animation-name: wall;
+  animation-duration: 0.5s;
+  border: 1px solid #283747;
+}
+
+.weight {
+  background-size: cover;
+  animation-name: wall;
+  animation-duration: 0.5s;
+}
+
+@keyframes visited {
+  0%  {background-color:#add8e6; transform: scale(0.1);}
+  25%  {background-color: #1dd31d;}
+  50%  {background-color:#add8e6;}
+  75% {background-color:#1dd31d;}
+  100% {background-color:#add8e6;}
+}
+
+@keyframes path {
+  50%  {transform: scale(1.5);}
+  100%  {transform: scale(1.0);}
+}
+
+@keyframes wall {
+  5%  {transform: scale(0.75);}
+  50%  {transform: scale(1.1);}
+  100%  {transform: scale(1);}
+}
