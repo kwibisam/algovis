@@ -1,7 +1,9 @@
 # algovis
-## this is a simple data structures and algorithms challenge attempting to visualise graph algorithms BFS and DFS.
+## this is a simple data structures and algorithms challenge attempting to visualise some graph algorithms.
 ## Key takeaways from project
 ### DOM manipulation
-### BFS algorithm
-### DFS algorithm
+### BFS
+### DFS 
+### Djikstra
+### A* search
 check it out.  https://kwibisam.github.io/algovis/
